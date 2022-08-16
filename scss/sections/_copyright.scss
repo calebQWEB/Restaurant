@@ -1,0 +1,24 @@
+@use '../customs'as *;
+
+.transition-copyright {
+    background: $black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    display: flex;
+
+    p {
+        font-size: 13px;
+        color: $gray-400;
+    }
+
+    .privacy {
+        flex: 1;
+
+        a {
+            color: $gray-500;
+            font-size: 13px;
+        }
+    }
+}

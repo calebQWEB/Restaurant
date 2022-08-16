@@ -1,0 +1,128 @@
+@use '../customs'as *;
+
+.reviews {
+    background: $gray-600;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 2rem;
+
+            i {
+                visibility: hidden;
+            }
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 5rem 4rem 5rem;
+        }
+
+        .swiper {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            text-align: left;
+
+            .swiper-wrapper {
+
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        border: 2px solid $gray-100;
+                        filter: brightness(70%);
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: $gray-100;
+                        padding-top: 30px;
+
+                        span {
+                            color: $black;
+                            padding-bottom: 2rem;
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+
+                        i {
+                            color: yellow;
+                            padding-top: 2rem;
+                        }
+                    }
+
+                }
+            }
+
+            .swiper-button-prev {
+                color: $primary;
+            }
+
+            .swiper-button-next {
+                color: $primary;
+            }
+
+            .swiper-pagination-active {
+                background: $gray-100;
+            }
+        }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:680px) {
+    .reviews {
+        height: 100%;
+
+        h1 {
+            font-size: 18px;
+            text-align: start;
+
+            i {
+                visibility: visible;
+                width: 30px;
+                height: 20px;
+                color: $secondary;
+
+            }
+        }
+
+        p {
+            font-size: 14px;
+            text-align: start;
+        }
+
+        .swiper-slide {
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-size: 12px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+}

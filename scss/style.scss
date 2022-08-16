@@ -1,0 +1,14 @@
+@use 'customs';
+
+// IMPORTING THE COMPONENTS
+@use 'components/buttons';
+@use 'components/mixins';
+
+
+// IMPORTING THE SECTIONS
+@use 'sections/nav';
+@use 'sections/hero';
+@use 'sections/services';
+@use 'sections/review';
+@use 'sections/footer';
+@use 'sections/copyright';

@@ -1,0 +1,27 @@
+{
+  "name": "8fast",
+  "version": "1.0.0",
+  "description": "website for a restaurant",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "html",
+    "sass",
+    "8fast",
+    "breakfast",
+    "restaurant"
+  ],
+  "author": "caleb ochai",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "autoprefixer": "^10.4.7",
+    "postcss-cli": "^9.1.0",
+    "swup": "^2.0.14"
+  }
+}
